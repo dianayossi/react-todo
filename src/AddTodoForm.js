@@ -17,8 +17,10 @@ const AddToDoForm = ({onAddTodo}) => {
             title: todoTitle,
             id: Date.now(),
         }
-        )
+        );
+        setTodoTitle('');
     };
+
 
     return(
         <form onSubmit={handleAddTodo}>
